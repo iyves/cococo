@@ -1,0 +1,30 @@
+Query: python3 get_valency.py -w1 читать RNC
+S (KLD = 2.21)
+  case     (KLD = 1.19)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | acc        |     310470 |        100 |        0.000322 |          2
+      | dat        |      80667 |          3 |       0.0000372 |          5
+      | gen        |     430477 |          4 |      0.00000929 |          5
+      | nom        |     490326 |          4 |      0.00000816 |          6
+  number   (KLD = 0.322)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | pl         |     363870 |         67 |        0.000184 |          2
+      | sg         |    1256918 |         45 |       0.0000358 |          4
+  gender   (KLD = 0.127)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | f          |     561901 |         58 |        0.000103 |          2
+      | n          |     271619 |         13 |       0.0000479 |          5
+      | m          |     767150 |         27 |       0.0000352 |          5
+      | mf         |       4113 |          0 |               0 |          8
+  animacy  (KLD = 0.0331)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | inan       |    1208080 |         84 |       0.0000695 |          2
+      | anim       |     397449 |         14 |       0.0000352 |          4
+  abbr     (KLD = 0.000705)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | nonabbr    |    1610470 |        112 |       0.0000695 |          2
+      | abbr       |      20950 |          1 |       0.0000477 |          4
+  name     (KLD = 0.000178)
+      | fval       |  corp freq |  word freq |      freq ratio |       rank
+      | nonname    |    1463334 |        102 |       0.0000697 |          2
+      | persn      |     168086 |         11 |       0.0000654 |          4

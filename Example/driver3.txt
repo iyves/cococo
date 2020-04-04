@@ -1,0 +1,20 @@
+Query: python3 CoCoCoDriver.py -v -n 3 -flem -w1 любить -pos2 A -w3 человек RNC
+--------------------------------------------------
+request url:
+	 GET	 http://cococo.cosyco.ru/cococo-test.py?flimit=10&corpus=RNC&flem=1&alem=0&skip=3&word1=%D0%BB%D1%8E%D0%B1%D0%B8%D1%82%D1%8C&pos1=&features1=&word2=&pos2=A&features2=&word3=%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA&pos3=&features3= 
+
+request headers:
+{
+  "Server": "nginx/1.10.3 (Ubuntu)",
+  "Date": "Sat, 04 Apr 2020 18:08:03 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "/var/www/html/cococo/188_tokens_all/model.txt": ""
+}
+
+response code:
+	 200
+-------------------------------------------------- 
+
+{'words': [{'word': 'сговорчивых', 'pos': 'A', 'freq1': 1, 'freq2': 2, 'rel': 0.5, 'mi': -3.91, 'tscore': 1.0, 'dice': 0.0741, 'll': 11.7}, {'word': 'незнакомого', 'pos': 'A', 'freq1': 1, 'freq2': 19, 'rel': 0.0526, 'mi': -6.16, 'tscore': 1.0, 'dice': 0.0455, 'll': 11.4}, {'word': 'красивых', 'pos': 'A', 'freq1': 1, 'freq2': 66, 'rel': 0.0152, 'mi': -7.41, 'tscore': 1.0, 'dice': 0.022, 'll': 11.4}, {'word': 'молодых', 'pos': 'A', 'freq1': 1, 'freq2': 344, 'rel': 0.00291, 'mi': -9.06, 'tscore': 0.998, 'dice': 0.00542, 'll': 11.4}], 'words_cl': [{'word': 'красивых', 'cluster': 0, 'dist': 0.0, 'frq': 1, 'pos': 'A', 'gender': '0', 'number': 'pl', 'case': 'acc', 'animacy': 'anim', 'degree': '0', 'form': 'plen', 'abbr': 'nonabbr'}, {'word': 'молодых', 'cluster': 0, 'dist': 3.6404, 'frq': 1, 'pos': 'A', 'gender': '0', 'number': 'pl', 'case': 'acc', 'animacy': 'anim', 'degree': '0', 'form': 'plen', 'abbr': 'nonabbr'}, {'word': 'незнакомого', 'cluster': 1, 'dist': 0.0, 'frq': 1, 'pos': 'A', 'gender': 'm', 'number': 'sg', 'case': 'acc', 'animacy': 'anim', 'degree': '0', 'form': 'plen', 'abbr': 'nonabbr'}, {'word': 'сговорчивых', 'cluster': 'Unknown', 'dist': 'Unknown', 'frq': 1, 'pos': 'A', 'gender': '0', 'number': 'pl', 'case': 'acc', 'animacy': 'anim', 'degree': '0', 'form': 'plen', 'abbr': 'nonabbr'}], 'poses': [{'posname': 'A', 'freqs': [4, 445839, 8.97e-06], 'kl': 0.0, 'kln': 0.0, 'features': [{'fname': 'abbr', 'kl': 0.0, 'fvals': [{'val': 'nonabbr', 'freqs': [4, 444850, 8.99e-06]}]}, {'fname': 'animacy', 'kl': 2.42, 'fvals': [{'val': 'anim', 'freqs': [4, 4679, 0.000855]}, {'val': 'inan', 'freqs': [0, 48200, 0.0]}]}, {'fname': 'case', 'kl': 1.71, 'fvals': [{'val': 'acc', 'freqs': [4, 73043, 5.48e-05]}, {'val': 'dat', 'freqs': [0, 13802, 0.0]}, {'val': 'gen', 'freqs': [0, 103494, 0.0]}, {'val': 'ins', 'freqs': [0, 52241, 0.0]}, {'val': 'loc', 'freqs': [0, 36553, 0.0]}, {'val': 'nom', 'freqs': [0, 125533, 0.0]}]}, {'fname': 'degree', 'kl': 0.0, 'fvals': [{'val': 'comp', 'freqs': [0, 4414, 0.0]}, {'val': 'comp2', 'freqs': [0, 466, 0.0]}]}, {'fname': 'form', 'kl': 0.0, 'fvals': [{'val': 'plen', 'freqs': [4, 0, 0.0]}]}, {'fname': 'gender', 'kl': 0.864, 'fvals': [{'val': 'f', 'freqs': [0, 115696, 0.0]}, {'val': 'm', 'freqs': [1, 134622, 7.43e-06]}, {'val': 'n', 'freqs': [0, 68963, 0.0]}]}, {'fname': 'number', 'kl': 0.484, 'fvals': [{'val': 'pl', 'freqs': [3, 121642, 2.47e-05]}, {'val': 'sg', 'freqs': [1, 319307, 3.13e-06]}]}]}], 'kl_lemma': [1.26], 'klstr': "[[['A', 'animacy', 2.4249218727392403], ['A', 'case', 1.7120137266758473], ['A', 'gender', 0.8636007416769844]]]", 'kl_ordered': [[{'pos': 'A', 'feat': 'animacy', 'kl': 2.42}, {'pos': 'A', 'feat': 'case', 'kl': 1.71}, {'pos': 'A', 'feat': 'gender', 'kl': 0.864}]]}

@@ -1,0 +1,322 @@
+Query: python3 CoCoCoDriver.py -vv -w1 жизнь -pos1 S -f1 "case=nom|" -pos2 A -f2 "variant=short|" Taiga -s News > Example/News.txt 
+--------------------------------------------------
+request url:
+	 GET	 http://cococo.cosyco.ru/cococo-test.py?flimit=10&corpus=Taiga&flem=0&alem=0&skip=2&word1=%D0%B6%D0%B8%D0%B7%D0%BD%D1%8C&pos1=S&features1=case%3Dnom%7C&word2=&pos2=A&features2=variant%3Dshort%7C&subcorpus=News 
+
+request headers:
+{
+  "Server": "nginx/1.10.3 (Ubuntu)",
+  "Date": "Sat, 04 Apr 2020 18:01:04 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "/var/www/html/cococo/188_tokens_all/model.txt": ""
+}
+
+request params:
+{
+  "flimit": 10,
+  "corpus": "Taiga",
+  "flem": 0,
+  "alem": 0,
+  "skip": 2,
+  "word1": "жизнь",
+  "pos1": "S",
+  "features1": "case=nom|",
+  "word2": "",
+  "pos2": "A",
+  "features2": "variant=short|",
+  "subcorpus": "News"
+}
+
+response code:
+	 200
+-------------------------------------------------- 
+
+{
+  "words": [
+    {
+      "word": "прекрасна",
+      "pos": "A",
+      "freq1": 7,
+      "freq2": 29,
+      "rel": 0.241,
+      "mi": -10.3,
+      "tscore": 2.64,
+      "dice": 0.00195,
+      "ll": 68.9
+    },
+    {
+      "word": "должна",
+      "pos": "A",
+      "freq1": 6,
+      "freq2": 11250,
+      "rel": 0.000533,
+      "mi": -16.4,
+      "tscore": 1.73,
+      "dice": 0.000653,
+      "ll": 59.1
+    }
+  ],
+  "words_cl": [
+    {
+      "word": "должна",
+      "cluster": 1,
+      "dist": 0.0,
+      "frq": 6,
+      "pos": "A",
+      "gender": "f",
+      "animacy": "",
+      "number": "sg",
+      "case": "",
+      "variant": "short",
+      "degree": "p",
+      "foreign": ""
+    },
+    {
+      "word": "прекрасна",
+      "cluster": 0,
+      "dist": 0.0,
+      "frq": 7,
+      "pos": "A",
+      "gender": "f",
+      "animacy": "",
+      "number": "sg",
+      "case": "",
+      "variant": "short",
+      "degree": "p",
+      "foreign": ""
+    }
+  ],
+  "poses": [
+    {
+      "posname": "A",
+      "freqs": [
+        13,
+        4823666,
+        2.7e-06
+      ],
+      "kl": 2.52,
+      "kln": 3.74,
+      "features": [
+        {
+          "fname": "animacy",
+          "kl": 0.0,
+          "fvals": [
+            {
+              "val": "anim",
+              "freqs": [
+                0,
+                23687,
+                0.0
+              ]
+            },
+            {
+              "val": "inan",
+              "freqs": [
+                0,
+                395855,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "case",
+          "kl": 0.0,
+          "fvals": [
+            {
+              "val": "acc",
+              "freqs": [
+                0,
+                694307,
+                0.0
+              ]
+            },
+            {
+              "val": "dat",
+              "freqs": [
+                0,
+                205892,
+                0.0
+              ]
+            },
+            {
+              "val": "gen",
+              "freqs": [
+                0,
+                1667485,
+                0.0
+              ]
+            },
+            {
+              "val": "ins",
+              "freqs": [
+                0,
+                349202,
+                0.0
+              ]
+            },
+            {
+              "val": "loc",
+              "freqs": [
+                0,
+                524958,
+                0.0
+              ]
+            },
+            {
+              "val": "nom",
+              "freqs": [
+                0,
+                1077188,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "degree",
+          "kl": 0.00864,
+          "fvals": [
+            {
+              "val": "comp",
+              "freqs": [
+                0,
+                26922,
+                0.0
+              ]
+            },
+            {
+              "val": "p",
+              "freqs": [
+                13,
+                4777103,
+                2.72e-06
+              ]
+            },
+            {
+              "val": "supr",
+              "freqs": [
+                0,
+                14550,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "foreign",
+          "kl": 0.0,
+          "fvals": [
+            {
+              "val": "Yes",
+              "freqs": [
+                0,
+                195,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "gender",
+          "kl": 1.08,
+          "fvals": [
+            {
+              "val": "f",
+              "freqs": [
+                13,
+                1170384,
+                1.11e-05
+              ]
+            },
+            {
+              "val": "m",
+              "freqs": [
+                0,
+                1563302,
+                0.0
+              ]
+            },
+            {
+              "val": "n",
+              "freqs": [
+                0,
+                726876,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "number",
+          "kl": 0.326,
+          "fvals": [
+            {
+              "val": "pl",
+              "freqs": [
+                0,
+                1334416,
+                0.0
+              ]
+            },
+            {
+              "val": "sg",
+              "freqs": [
+                13,
+                3460562,
+                3.76e-06
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "variant",
+          "kl": 2.86,
+          "fvals": [
+            {
+              "val": "long",
+              "freqs": [
+                0,
+                4547720,
+                0.0
+              ]
+            },
+            {
+              "val": "short",
+              "freqs": [
+                13,
+                275946,
+                4.71e-05
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kl_lemma": [
+    2.52
+  ],
+  "klstr": "[[['A', 'variant', 2.8610843044615706], ['A', '', 2.522065172951827], ['A', 'gender', 1.084099103534991]]]",
+  "kl_ordered": [
+    [
+      {
+        "pos": "A",
+        "feat": "variant",
+        "kl": 2.86
+      },
+      {
+        "pos": "A",
+        "feat": "",
+        "kl": 2.52
+      },
+      {
+        "pos": "A",
+        "feat": "gender",
+        "kl": 1.08
+      }
+    ]
+  ]
+}

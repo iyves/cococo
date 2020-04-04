@@ -1,0 +1,635 @@
+Query: python3 CoCoCoDriver.py -vv -w1 любовь -pos1 S -pos2 A -f2 "form=brev|" IRU
+--------------------------------------------------
+request url:
+	 GET	 http://cococo.cosyco.ru/cococo-test.py?flimit=10&corpus=IRU&flem=0&alem=0&skip=2&word1=%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C&pos1=S&features1=&word2=&pos2=A&features2=form%3Dbrev%7C 
+
+request headers:
+{
+  "Server": "nginx/1.10.3 (Ubuntu)",
+  "Date": "Sat, 04 Apr 2020 18:07:44 GMT",
+  "Content-Type": "application/json; charset=utf-8",
+  "Transfer-Encoding": "chunked",
+  "Connection": "keep-alive",
+  "/var/www/html/cococo/188_tokens_all/model.txt": ""
+}
+
+request params:
+{
+  "flimit": 10,
+  "corpus": "IRU",
+  "flem": 0,
+  "alem": 0,
+  "skip": 2,
+  "word1": "любовь",
+  "pos1": "S",
+  "features1": "",
+  "word2": "",
+  "pos2": "A",
+  "features2": "form=brev|"
+}
+
+response code:
+	 200
+-------------------------------------------------- 
+
+{
+  "words": [
+    {
+      "word": "должна",
+      "pos": "A",
+      "freq1": 44,
+      "freq2": 34304,
+      "rel": 0.00128,
+      "mi": -16.8,
+      "tscore": 5.77,
+      "dice": 0.0015,
+      "ll": 511.0
+    },
+    {
+      "word": "слепа",
+      "pos": "A",
+      "freq1": 23,
+      "freq2": 105,
+      "rel": 0.219,
+      "mi": -11.6,
+      "tscore": 4.79,
+      "dice": 0.00189,
+      "ll": 252.0
+    },
+    {
+      "word": "способна",
+      "pos": "A",
+      "freq1": 10,
+      "freq2": 3182,
+      "rel": 0.00314,
+      "mi": -15.9,
+      "tscore": 2.99,
+      "dice": 0.000731,
+      "ll": 101.0
+    },
+    {
+      "word": "зла",
+      "pos": "A",
+      "freq1": 8,
+      "freq2": 205,
+      "rel": 0.039,
+      "mi": -13.3,
+      "tscore": 2.82,
+      "dice": 0.000656,
+      "ll": 78.4
+    },
+    {
+      "word": "возможна",
+      "pos": "A",
+      "freq1": 8,
+      "freq2": 1849,
+      "rel": 0.00433,
+      "mi": -15.5,
+      "tscore": 2.72,
+      "dice": 0.000615,
+      "ll": 78.5
+    },
+    {
+      "word": "похожа",
+      "pos": "A",
+      "freq1": 7,
+      "freq2": 2900,
+      "rel": 0.00241,
+      "mi": -16.1,
+      "tscore": 2.46,
+      "dice": 0.000517,
+      "ll": 68.0
+    },
+    {
+      "word": "жива",
+      "pos": "A",
+      "freq1": 6,
+      "freq2": 1599,
+      "rel": 0.00375,
+      "mi": -15.7,
+      "tscore": 2.34,
+      "dice": 0.000465,
+      "ll": 57.2
+    },
+    {
+      "word": "нужна",
+      "pos": "A",
+      "freq1": 6,
+      "freq2": 12381,
+      "rel": 0.000485,
+      "mi": -17.7,
+      "tscore": 1.6,
+      "dice": 0.000328,
+      "ll": 59.0
+    },
+    {
+      "word": "подобна",
+      "pos": "A",
+      "freq1": 4,
+      "freq2": 377,
+      "rel": 0.0106,
+      "mi": -14.6,
+      "tscore": 1.97,
+      "dice": 0.000326,
+      "ll": 36.4
+    },
+    {
+      "word": "необходима",
+      "pos": "A",
+      "freq1": 4,
+      "freq2": 2987,
+      "rel": 0.00134,
+      "mi": -16.7,
+      "tscore": 1.75,
+      "dice": 0.000294,
+      "ll": 36.8
+    },
+    {
+      "word": "безответна",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 12,
+      "rel": 0.25,
+      "mi": -11.5,
+      "tscore": 1.73,
+      "dice": 0.000248,
+      "ll": 26.8
+    },
+    {
+      "word": "коварна",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 31,
+      "rel": 0.0968,
+      "mi": -12.4,
+      "tscore": 1.73,
+      "dice": 0.000248,
+      "ll": 26.5
+    },
+    {
+      "word": "трагична",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 72,
+      "rel": 0.0417,
+      "mi": -13.3,
+      "tscore": 1.73,
+      "dice": 0.000247,
+      "ll": 26.5
+    },
+    {
+      "word": "неизменна",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 84,
+      "rel": 0.0357,
+      "mi": -13.4,
+      "tscore": 1.72,
+      "dice": 0.000247,
+      "ll": 26.5
+    },
+    {
+      "word": "немыслима",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 164,
+      "rel": 0.0183,
+      "mi": -14.1,
+      "tscore": 1.72,
+      "dice": 0.000246,
+      "ll": 26.4
+    },
+    {
+      "word": "несчастна",
+      "pos": "A",
+      "freq1": 3,
+      "freq2": 171,
+      "rel": 0.0175,
+      "mi": -14.1,
+      "tscore": 1.72,
+      "dice": 0.000246,
+      "ll": 26.4
+    }
+  ],
+  "words_cl": [
+    {
+      "word": "безответна",
+      "cluster": 0,
+      "dist": 0.0,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "возможна",
+      "cluster": 1,
+      "dist": 4.404,
+      "frq": 8,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "должна",
+      "cluster": 2,
+      "dist": 3.6359,
+      "frq": 44,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "жива",
+      "cluster": 0,
+      "dist": 3.8813,
+      "frq": 6,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "зла",
+      "cluster": "Unknown",
+      "dist": "Unknown",
+      "frq": 8,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "коварна",
+      "cluster": 0,
+      "dist": 3.5047,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "неизменна",
+      "cluster": 0,
+      "dist": 3.5086,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "немыслима",
+      "cluster": 0,
+      "dist": 4.0152,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "необходима",
+      "cluster": 1,
+      "dist": 0.0,
+      "frq": 4,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "несчастна",
+      "cluster": 0,
+      "dist": 3.484,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "нужна",
+      "cluster": 1,
+      "dist": 2.7093,
+      "frq": 6,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "подобна",
+      "cluster": 0,
+      "dist": 3.8113,
+      "frq": 4,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "похожа",
+      "cluster": 0,
+      "dist": 4.5175,
+      "frq": 7,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "слепа",
+      "cluster": 0,
+      "dist": 3.0488,
+      "frq": 23,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "способна",
+      "cluster": 2,
+      "dist": 0.0,
+      "frq": 10,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    },
+    {
+      "word": "трагична",
+      "cluster": 0,
+      "dist": 3.2552,
+      "frq": 3,
+      "pos": "A",
+      "gender": "f",
+      "number": "sg",
+      "case": "0",
+      "animacy": "0",
+      "degree": "p",
+      "form": "brev",
+      "abbr": "0"
+    }
+  ],
+  "poses": [
+    {
+      "posname": "A",
+      "freqs": [
+        138,
+        12130087,
+        1.14e-05
+      ],
+      "kl": 1.04,
+      "kln": 1.1,
+      "features": [
+        {
+          "fname": "case",
+          "kl": 0.0,
+          "fvals": [
+            {
+              "val": "acc",
+              "freqs": [
+                0,
+                1873807,
+                0.0
+              ]
+            },
+            {
+              "val": "dat",
+              "freqs": [
+                0,
+                387475,
+                0.0
+              ]
+            },
+            {
+              "val": "gen",
+              "freqs": [
+                0,
+                3122214,
+                0.0
+              ]
+            },
+            {
+              "val": "ins",
+              "freqs": [
+                0,
+                1304164,
+                0.0
+              ]
+            },
+            {
+              "val": "loc",
+              "freqs": [
+                0,
+                943144,
+                0.0
+              ]
+            },
+            {
+              "val": "nom",
+              "freqs": [
+                0,
+                3227086,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "degree",
+          "kl": 0.0194,
+          "fvals": [
+            {
+              "val": "comp",
+              "freqs": [
+                0,
+                232514,
+                0.0
+              ]
+            },
+            {
+              "val": "p",
+              "freqs": [
+                138,
+                11896768,
+                1.16e-05
+              ]
+            },
+            {
+              "val": "supr",
+              "freqs": [
+                0,
+                805,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "form",
+          "kl": 2.44,
+          "fvals": [
+            {
+              "val": "brev",
+              "freqs": [
+                138,
+                1037464,
+                0.000133
+              ]
+            },
+            {
+              "val": "plen",
+              "freqs": [
+                0,
+                10859304,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "gender",
+          "kl": 1.02,
+          "fvals": [
+            {
+              "val": "f",
+              "freqs": [
+                138,
+                3053125,
+                4.52e-05
+              ]
+            },
+            {
+              "val": "m",
+              "freqs": [
+                0,
+                3537183,
+                0.0
+              ]
+            },
+            {
+              "val": "n",
+              "freqs": [
+                0,
+                1910052,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "fname": "number",
+          "kl": 0.336,
+          "fvals": [
+            {
+              "val": "pl",
+              "freqs": [
+                0,
+                3393860,
+                0.0
+              ]
+            },
+            {
+              "val": "sg",
+              "freqs": [
+                138,
+                8497900,
+                1.62e-05
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "kl_lemma": [
+    1.18
+  ],
+  "klstr": "[[['A', 'form', 2.4394874928642634], ['A', '', 1.0363399776830755], ['A', 'gender', 1.0239428592915762]]]",
+  "kl_ordered": [
+    [
+      {
+        "pos": "A",
+        "feat": "form",
+        "kl": 2.44
+      },
+      {
+        "pos": "A",
+        "feat": "",
+        "kl": 1.04
+      },
+      {
+        "pos": "A",
+        "feat": "gender",
+        "kl": 1.02
+      }
+    ]
+  ]
+}
