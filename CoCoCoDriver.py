@@ -36,7 +36,7 @@ class CoCoCoDriver:
 
 
     # parse command-line arguments
-    # returns: <dict> a list of all arguments
+    # returns: <class 'argparse.ArgumentParser'> initialize the argument parser for this class
     #
     def init_args(self):
         self.parser = argparse.ArgumentParser(description="Find the significant values of an unknown element in a sequence of "
