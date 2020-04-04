@@ -1,12 +1,11 @@
-# Wrapper for the CoCoCo: Collocations, Collligations, and Corpora tool
+# Wrapper for CoCoCo: Collocations, Collligations, and Corpora 
 
-This is a python CLI for the CoCoCo API. It allows for finding the
-significant values of an unknown element in a sequence of 2 or 3 words.
+This is a python CLI for the CoCoCo API. It allows for finding the significant values of an unknown element in a sequence of 2 or 3 words.
 
 ## Contents
-1. [CoCoCoDriver.py](#CoCoCoDriver.py)
-1. [get_valency.py](#get_valency.py)
-1. [utility.py](#utility.py)
+1. [CoCoCoDriver.py](#CoCoCoDriverpy)
+1. [get_valency.py](#get_valencypy)
+1. [utility.py](#utilitypy)
 
 The CoCoCo website GUI is located at [http://cococo.cosyco.ru/](http://cococo.cosyco.ru/).
 
@@ -88,30 +87,30 @@ proper | ['yes', 'no'] | имя собственное | ['да', 'нет']
 verbform | ['fin', 'inf'] | форма глагола | ['личная', 'неличная']
 
 ### Examples:
-[**python3 CoCoCoDriver.py -w1 читать RNC**](Example/driver1.txt)
+[**python3 CoCoCoDriver.py -w1 читать RNC**](Example/driver1.txt)\
 *Print the server's .json response from searching "читать", "" from ruscorpora*
 
-[**python3 CoCoCoDriver.py -v -n 3 -w1 быть -pos2 A -w3 человек RNC**](Example/driver2.txt)
-*Print the GET request url & headers and response code*
-*Then, print out the server's .json response from searching "быть", "", "человек" from ruscorpora*
+[**python3 CoCoCoDriver.py -v -n 3 -w1 быть -pos2 A -w3 человек RNC**](Example/driver2.txt)\
+*Print the GET request url & headers and response code*\
+*Then, print out the server's .json response from searching "быть", "", "человек" from ruscorpora*\
 *The second word is an adjective*
 
-[**python3 CoCoCoDriver.py -v -n 3 -flem -w1 любить -pos2 A -w3 человек RNC**](Example/driver3.txt)
-*Print the GET request url & headers and response code*
-*Then, print out the server's .json response from searching "любить", "", "человек" from ruscorpora*
+[**python3 CoCoCoDriver.py -v -n 3 -flem -w1 любить -pos2 A -w3 человек RNC**](Example/driver3.txt)\
+*Print the GET request url & headers and response code*\
+*Then, print out the server's .json response from searching "любить", "", "человек" from ruscorpora*\
 *The second word is an adjective and each word is a lemma*
 
-[**python3 CoCoCoDriver.py -vv -w1 любовь -pos1 S -pos2 A -f2 "form=brev|" IRU**](Example/driver4.txt)
-*Print the GET request url & headers and response code*
-*Then, pretty print the server's .json response from searching "любовь", "", from I-RU*
+[**python3 CoCoCoDriver.py -vv -w1 любовь -pos1 S -pos2 A -f2 "form=brev|" IRU**](Example/driver4.txt)\
+*Print the GET request url & headers and response code*\
+*Then, pretty print the server's .json response from searching "любовь", "", from I-RU*\
 *The first word is a noun and the second word is an adjective in short form*
 
 <hr />
 
-*The following code saves the CoCoCoDriver output to files*
-*Print the GET request url & headers and response code*
-*Then, pretty print the server's .json response from searching "жизнь", ""*
-*The first word is a noun and the second word is an adjective in short form*
+*The following code saves the CoCoCoDriver output to files*\
+*Print the GET request url & headers and response code*\
+*Then, pretty print the server's .json response from searching "жизнь", ""*\
+*The first word is a noun and the second word is an adjective in short form*\
 *Each command queries a subcorpus of the Taiga database:*
 1. All subcorpora:  [**python3 CoCoCoDriver.py -vv -w1 жизнь -pos1 S -f1 "case=nom|" -pos2 A -f2 "variant=short|" Taiga > Example/All.txt**](Example/All.txt)
 1. Social subcorpus: [**python3 CoCoCoDriver.py -vv -w1 жизнь -pos1 S -f1 "case=nom|" -pos2 A -f2 "variant=short|" Taiga -s Social > Example/Social.txt**](Example/Social.txt)
@@ -140,26 +139,26 @@ Threshold | Approach | Подход
 0 | Simple approach - first 3 ranks in the 'Rank' column | Простой подход - Первые 3 ранга в колонке Ranks
 1 | Conservative approach - print out ranks that are above the median frequency ratio | Консерванитвный подход - Freq. ratio высше медианы
 2 | Liberal approach - print out all ranks that are above the largest rank difference | Либеральный подход - Искать самую большую дистанцию между Ranks
-3 | Diffiule approach - TODO | Сложный подход - TODO
+3 | Difficult approach - TODO | Сложный подход - TODO
 4 | Everything - print out all ranks | Всё
 
 ### Examples
-[**python3 get_valency.py -w1 читать RNC**](Example/valency1.txt)
-*Print the valency for searching "читать", "" from ruscorpora*
+[**python3 get_valency.py -w1 читать RNC**](Example/valency1.txt)\
+*Print the valency for searching "читать", "" from ruscorpora*\
 *The default is threshold 0: Simple approach - first 3 ranks in the 'Rank' column*
 
-[**python3 get_valency.py -t 4 -w1 читать RNC**](Example/valency2.txt)
-*Print the valency for searching "читать", "" from ruscorpora*
+[**python3 get_valency.py -t 4 -w1 читать RNC**](Example/valency2.txt)\
+*Print the valency for searching "читать", "" from ruscorpora*\
 *Use threshold 4: Everything - print out all ranks*
 
-[**python3 get_valency.py -vv -t 1 -w1 читать RNC**](Example/valency3.txt)
-*Verbosity 2 - print request header and url, and raw server's .json response*
-*Print the valency for searching "читать", "" from ruscorpora*
+[**python3 get_valency.py -vv -t 1 -w1 читать RNC**](Example/valency3.txt)\
+*Verbosity 2 - print request header and url, and raw server's .json response*\
+*Print the valency for searching "читать", "" from ruscorpora*\
 *Use threshold 1: Conservative approach - print out ranks that are above the median frequency ratio*
 
-[**python3 get_valency.py -vvv -t 2 -w1 читать RNC**](Example/valency4.txt)
-*Verbosity 3 - print request header and url, and pretty print the server's .json response*
-*Print the valency for searching "читать", "" from ruscorpora*
+[**python3 get_valency.py -vvv -t 2 -w1 читать RNC**](Example/valency4.txt)\
+*Verbosity 3 - print request header and url, and pretty print the server's .json response*\
+*Print the valency for searching "читать", "" from ruscorpora*\
 *Use threshold 2: Liberal approach - print out all ranks that are above the largest rank difference*
 
 ## utility.py
